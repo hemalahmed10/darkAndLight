@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.creator{
+    position: absolute;
+    right: 4%;
+    top: 63%;
+    opacity: 0;
+    scale: 0;
+    transition: all .5s;
+}
+.creator h2{
+    color: #fff;
+    font-family: "Angelina";
+    line-height: 1;
+    letter-spacing: 3px;
+}
+.creator h1{
+    color: #fff;
+    font-family: "Angelina";
+    letter-spacing: 6px;
+}
+#dark{
+    height: 100%;
+    width: 100%;
+}
+#light{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+.magic{
+    position: absolute;
+    top: 87%;
+    color: #fff;
+    display: flex;
+    gap: 1vw;
+    font-family: gilroy;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.magic button{
+    padding: .4vw 1.1vw;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.board{
+    height: 2vw;
+    width: 5vw;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+
+}
+.circle{
+    height: .9vw;
+    width: .9vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 1vw;
+    transform: translateY(-50%);
+    left: .3vw;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+.p1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 23px;
+    right: 1vw;
+    transition: all .5s;
+    display: none;
+    cursor: none;
+    color: #000;
+}
+.p2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 23px;
+    right: 1vw;
+    transition: all .5s;
+    cursor: none;
+    color: #000;
+}
+
+/* -------------------------- */
+
+@media screen and (max-width: 500px) {
+    
+    .creator{
+        right: 9%;
+    }
+    .creator h1{
+        font-family: "Angelina";
+        font-size: 6vw;
+
+    }
+    .creator h2{
+        font-family: "Angelina";
+        font-size: 4vw;
+    }
+
+    
+    #dark{
+        height: 80%;
+        width: 100%;
+    }
+    #light{
+        height: 80%;
+        width: 100%;
+    }
+    .magic{
+        gap: 4vw;
+    
+    }
+
+    .board{
+        height: 6vw;
+        width: 12vw;
+        
+    
+    }
+    .circle{
+        height: 2.5vw;
+        width: 2.5vw;
+        position: absolute;
+        left: 1vw;
+    
+    }
+    .p1{
+        font-size: 16px;
+        right: 2.3vw;
+    }
+    .p2{
+        font-size: 16px;
+        right: 2.3vw;
+    }
+    
+}
